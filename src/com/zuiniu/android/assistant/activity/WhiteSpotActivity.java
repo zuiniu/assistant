@@ -23,7 +23,7 @@ public class WhiteSpotActivity extends Activity implements View.OnClickListener 
 		// TODO Auto-generated method stub
 		Log.d(tag, "你点击了按钮");
 		
-		//
+		//测试更新
 	}
 	
 	@Override
