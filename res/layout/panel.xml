@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout android:background="@drawable/panel_bg" android:layout_width="@dimen/panel_sidelength" android:layout_height="@dimen/panel_side_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- <net.qihoo.launcher.app.whitespot.PanelView android:gravity="center" android:id="@+id/grid" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="6.669983dip" android:numColumns="3" android:layout_centerInParent="true" /> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/panel_sidelength"
+    android:layout_height="@dimen/panel_side_height"
+    android:background="@drawable/panel_bg" >
+
+    <com.zuiniu.android.assistant.activity.panel.view.PanelView
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="0.0dip"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false"
+        android:gravity="center"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="7dip" />
+
 </RelativeLayout>

@@ -2,5 +2,16 @@
 <resources>
 
     <color name="transparent">#00000000</color>
+    <color name="dialog_text_title">#ff707070</color>
+    <color name="dialog_text_light">#ffffffff</color>
+    <color name="dialog_text_dark">#ff414141</color>
+    <color name="dialog_text_tip">#ffcecece</color>
+    <color name="dialog_text_secontary">#ff909090</color>
+    <color name="preference_window_bg">#fff3f3f3</color>
+    <color name="preferences_category_text">#ff767676</color>
+    <color name="preferences_key_text">#ff414141</color>
+    <color name="preferences_summary_text">#ff767676</color>
+    <color name="preferences_disable_text">#ffababab</color>
+    <color name="penal_cell_text">#ff767676</color>
 
 </resources>

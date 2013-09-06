@@ -43,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:theme="@style/Theme.CustomDialog" android:name=".activity.panel.PanelActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
     </application>
 
 </manifest>
