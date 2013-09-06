@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd7d6d3" >
+
+    <LinearLayout
+        android:id="@+id/theme_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/preview_topbar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/theme_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff3b3a35"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/theme_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:textColor="#ff918f8e"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/theme_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/theme_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/preview_bottombar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/theme_apply_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_weight="10.0"
+            android:background="@drawable/preview_btn"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/preview_apply_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6.0dip"
+                android:text="@string/theme_apply"
+                android:textColor="#ffffffff"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/theme_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/preview_delete_btn"
+            android:clickable="true" />
+    </LinearLayout>
+
+</RelativeLayout>
