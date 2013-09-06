@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="dialog_layout_padding_top">10.0dip</dimen>
+    <dimen name="dialog_layout_padding_left">20.0dip</dimen>
+    <dimen name="dialog_layout_padding_right">20.0dip</dimen>
+    <dimen name="dialog_layout_padding_bottom">20.0dip</dimen>
+    <dimen name="dialog_title_padding_top">10.0dip</dimen>
+    <dimen name="dialog_title_padding_bottom">20.0dip</dimen>
+    <dimen name="dialog_title_text_size">18.0sp</dimen>
+    <dimen name="dialog_content_text_size">16.0sp</dimen>
+    <dimen name="dialog_button_text_size">16.0sp</dimen>
+    <dimen name="preference_layout_margin_left">13.199982dip</dimen>
+    <dimen name="preference_layout_margin_right">13.199982dip</dimen>
+    <dimen name="preference_layout_height">56.69998dip</dimen>
+    <dimen name="preference_checkbox_widget_width">61.0dip</dimen>
+    <dimen name="preference_category_height">24.0dip</dimen>
+    <dimen name="preference_titlebar_height">46.0dip</dimen>
+    <dimen name="list_icon_sidelength">56.659973dip</dimen>
+    <dimen name="list_line_padding">12.0dip</dimen>
+    <dimen name="list_line_min_height">60.0dip</dimen>
+    <dimen name="slot_text_padding">5.0dip</dimen>
+    <dimen name="slot_icon_buttom_pedding">20.0dip</dimen>
+    <dimen name="slot_text_buttom_margin">3.0dip</dimen>
+    <dimen name="panel_sidelength">310.0dip</dimen>
+    <dimen name="panel_side_height">311.0dip</dimen>
+</resources>
