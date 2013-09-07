@@ -19,7 +19,7 @@ import android.widget.AdapterView;
  */
 public class PanelView extends GridView implements
 		AdapterView.OnItemClickListener, AdapterView.OnItemLongClickListener {
-	
+
 	private final Vibrator vibrator;
 	private final WindowManager.LayoutParams layoutParams;
 
