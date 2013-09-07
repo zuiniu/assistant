@@ -38,9 +38,10 @@ public class PanelView extends GridView implements
 		// TODO Auto-generated method stub
 		int count = parent.getCount();
 		for(int i =0; i < count; i++) {
-			PannelItemLayout child = (PannelItemLayout)parent.getChildAt(i);
-			if (child != null) {
-				child.showDelete();
+			PanelAdapter adapter = (PanelAdapter)parent.getAdapter();
+			
+			if (adapter != null) {
+				adapter.showDelete(true);
 			}
 		}
 		

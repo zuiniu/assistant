@@ -21,6 +21,7 @@ public class PanelAdapter extends BaseAdapter {
 	private List<Slot> slots = new ArrayList<Slot>();
 	private PanelView parent;
 	private Activity context;
+	private boolean isShowDel = false;
 	
 	public PanelAdapter(Activity context, PanelView parent) {
 		this.context = context;
@@ -56,13 +57,24 @@ public class PanelAdapter extends BaseAdapter {
 		if (layout == null) {
 			layout = new PannelItemLayout(context, this.parent);
 		}
-		layout.init(slot);
+		layout.init(slot, isShowDel);
 		
 		return layout;
 	}
 	
 	public void refreshData(final List<Slot> slots) {
 		this.slots = slots;
+		
+		context.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				notifyDataSetChanged();
+			}
+		});
+	}
+	
+	public void showDelete(final boolean isShowDel) {
+		this.isShowDel = isShowDel;
 		
 		context.runOnUiThread(new Runnable() {
 			@Override

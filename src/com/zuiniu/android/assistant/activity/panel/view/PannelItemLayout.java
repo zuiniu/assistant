@@ -28,7 +28,6 @@ public class PannelItemLayout extends RelativeLayout {
 	private TextView itemName;
 	private Slot slot;
 	private PanelView parent;
-	private boolean isShowDel = false;
 	 
 
 	public PannelItemLayout(Context context, PanelView parent) {
@@ -95,7 +94,7 @@ public class PannelItemLayout extends RelativeLayout {
 	}
 
 	
-	public void init(Slot slot) {
+	public void init(Slot slot, boolean isShowDel) {
 		if (slot == null) {
 			return;
 		}
@@ -131,12 +130,5 @@ public class PannelItemLayout extends RelativeLayout {
 	
 	public Slot getSolt() {
 		return slot;
-	}
-	
-	public void showDelete() {
-		if (!slot.isEmpty()) {
-			isShowDel = true;
-			itemDel.setVisibility(View.VISIBLE);
-		}
 	}
 }
