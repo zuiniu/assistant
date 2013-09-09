@@ -56,6 +56,8 @@ public class WhiteSpotActivity extends Activity implements View.OnClickListener 
 		theme_apply_single = (LinearLayout) findViewById(R.id.theme_apply_single);
 		theme_apply_single.setOnClickListener(this);
 		
+		
+		
 		/**
 		 * 设置开关改变后事件
 		 */

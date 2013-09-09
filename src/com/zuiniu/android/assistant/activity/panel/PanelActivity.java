@@ -44,10 +44,9 @@ public class PanelActivity extends Activity implements View.OnTouchListener {
 		adapter = new PanelAdapter(this, panel);
 		panel.setAdapter(adapter);
 		
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 9; i++) {
 			Slot slot = new Slot();
-			slot.setEmpty(i %2 == 0);
-			slot.setName("测试" + i);
+			slot.setEmpty(true);
 			slots.add(slot);
 		}
 		

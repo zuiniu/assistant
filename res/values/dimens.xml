@@ -22,5 +22,5 @@
     <dimen name="slot_icon_buttom_pedding">20.0dip</dimen>
     <dimen name="slot_text_buttom_margin">3.0dip</dimen>
     <dimen name="panel_sidelength">310.0dip</dimen>
-    <dimen name="panel_side_height">311.0dip</dimen>
+    <dimen name="panel_side_height">320.0dip</dimen>
 </resources>
