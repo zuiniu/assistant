@@ -35,4 +35,24 @@
         <attr name="customTypeface" format="string" />
     </declare-styleable>
 
+    
+     <!-- 自定义ToggleButton控件属性 author by guorl -->
+     <declare-styleable name="CustomToggle">
+        <attr name="toggle_background" format="reference" />
+ 		<!-- 图像背景 -->
+        <attr name="toggle_text_padding" format="dimension" />
+ 		<!-- 文件间隔 -->
+        <attr name="toggle_text_on" format="string" />
+        <attr name="toggle_text_off" format="string" />
+        <attr name="toggle_text_color" format="color" />
+ 		<!-- 文字颜色 -->
+        <attr name="toggle_thumb" format="reference" />
+ 		<!-- 文字大小 -->
+ 		 <attr name="toggle_text_size" format="dimension" />
+ 		
+ 		 <!-- 动画移动距离 -->
+ 		 <attr name="toggle_move_size" format="dimension" />
+ 		 
+ 		  <attr name="toggle_key" format="string" />
+    </declare-styleable>
 </resources>

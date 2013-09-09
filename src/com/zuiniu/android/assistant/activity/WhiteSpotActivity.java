@@ -3,16 +3,19 @@
  */
 package com.zuiniu.android.assistant.activity;
 
-import com.zuiniu.android.assistant.R;
-import com.zuiniu.android.assistant.activity.panel.PanelActivity;
-
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+
+import com.zuiniu.android.assistant.MainApplication;
+import com.zuiniu.android.assistant.R;
+import com.zuiniu.android.assistant.activity.panel.PanelActivity;
+import com.zuiniu.android.assistant.view.CustomToggle;
 
 /**
  * @author Administrator
@@ -21,8 +24,11 @@ import android.widget.LinearLayout;
 public class WhiteSpotActivity extends Activity implements View.OnClickListener {
 	private static final String tag = WhiteSpotActivity.class.getSimpleName();
 
-	private LinearLayout theme_apply_single;
 
+	private Context mContext;
+	private LinearLayout theme_apply_single;
+	CustomToggle showtoggle;//显示开关
+	
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
@@ -39,15 +45,27 @@ public class WhiteSpotActivity extends Activity implements View.OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-
+		this.mContext=WhiteSpotActivity.this;
 		// 设置窗口全屏
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		setContentView(R.layout.preview);
+		showtoggle=(CustomToggle)findViewById(R.id.showtoggle);
 
 		theme_apply_single = (LinearLayout) findViewById(R.id.theme_apply_single);
 		theme_apply_single.setOnClickListener(this);
+		
+		/**
+		 * 设置开关改变后事件
+		 */
+		showtoggle.setCheckChanged(new Runnable() {
+			
+			@Override
+			public void run() {
+				MainApplication.refreshFloatView();
+			}
+		});
 	}
 
 	@Override

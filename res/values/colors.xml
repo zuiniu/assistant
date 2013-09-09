@@ -14,4 +14,7 @@
     <color name="preferences_disable_text">#ffababab</color>
     <color name="penal_cell_text">#ff767676</color>
 
+      <drawable name="list_bg">#f2f2f2</drawable>
+    <drawable name="soft_bg">#d8dbe0</drawable>
+    
 </resources>

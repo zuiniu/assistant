@@ -4,4 +4,7 @@
     
     <string name="theme_apply">应用</string>
 
+    
+         <string name="toggle_off"></string>
+    <string name="toggle_on"></string>
 </resources>

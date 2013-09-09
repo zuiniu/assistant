@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fill_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,6 +38,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
+
+    <!-- 中间设置布局 edit by guorl -->
+
+    <LinearLayout
+        android:id="@+id/theme_middle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme_top_bar"
+        android:background="@drawable/preview_bottombar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/list_selector"
+            android:gravity="center_vertical"
+            android:onClick="onClick" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:singleLine="true"
+                android:text="是否在桌面显示"
+                android:textColor="#333333"
+                android:textSize="18dp" />
+
+            <com.zuiniu.android.assistant.view.CustomToggle
+                android:id="@+id/showtoggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                toggle:toggle_background="@drawable/selector_toggle"
+                toggle:toggle_key="key_show"
+                toggle:toggle_move_size="30dp"
+                toggle:toggle_text_off="@string/toggle_off"
+                toggle:toggle_text_on="@string/toggle_on"
+                toggle:toggle_text_size="14dp"
+                toggle:toggle_thumb="@drawable/bar" />
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/theme_bottom_bar"
