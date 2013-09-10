@@ -66,7 +66,7 @@ public class ApplicationListWindow extends CustomPopupWindow implements OnClickL
 			public void onItemClick(AdapterView<?> parent, View view, int position,
 					long id) {
 				// TODO Auto-generated method stub
-				
+				dismiss();
 			}
 		});
 		

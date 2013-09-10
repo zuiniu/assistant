@@ -72,6 +72,10 @@ public class CustomPopupWindow {
 		showWindows(x, y);
 	}
 	
+	public void setPosition(int x, int y) {
+		window.update(x, y, -1, -1);
+	}
+	
 	public void show() {
 		show(30, 130);
 	}

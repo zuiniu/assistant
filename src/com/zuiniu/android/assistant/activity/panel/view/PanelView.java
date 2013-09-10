@@ -65,7 +65,7 @@ public class PanelView extends GridView implements
 		
 		if (itemView != null) {
 			if (itemView.getSolt().isEmpty()) {
-				ApplicationListWindow window = new ApplicationListWindow(view);
+				WantToListWindow window = new WantToListWindow(view);
 				window.show();
 			}
 		}
