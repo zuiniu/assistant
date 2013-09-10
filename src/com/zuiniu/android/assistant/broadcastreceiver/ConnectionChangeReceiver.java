@@ -54,6 +54,8 @@ public class ConnectionChangeReceiver extends BroadcastReceiver {
 
 		if (!success) {
 			Toast.makeText(context, "你断网了", Toast.LENGTH_LONG).show();
+		} else {
+			Toast.makeText(context, "你联网了", Toast.LENGTH_LONG).show();
 		}
 	}
 }
