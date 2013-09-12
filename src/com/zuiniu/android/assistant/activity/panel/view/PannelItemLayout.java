@@ -9,6 +9,7 @@ import com.zuiniu.android.assistant.datamanager.bean.panel.Slot;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,12 +18,13 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.text.TextUtils;
+import android.view.View.OnFocusChangeListener;
 
 /**
  * @author Administrator
  *
  */
-public class PannelItemLayout extends RelativeLayout {
+public class PannelItemLayout extends RelativeLayout implements OnFocusChangeListener {
 	
 	private ImageView itemBg, itemDel;
 	private TextView itemName;
@@ -70,6 +72,8 @@ public class PannelItemLayout extends RelativeLayout {
 		
 		Drawable drawable = getResources().getDrawable(R.drawable.slot_empty_bg);
 		
+		//setFocusable(true);
+		//setFocusableInTouchMode(true);
 		if (drawable != null) {
 			setLayoutParams(new AbsListView.LayoutParams(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight()));
 		} else {
@@ -130,5 +134,11 @@ public class PannelItemLayout extends RelativeLayout {
 	
 	public Slot getSolt() {
 		return slot;
+	}
+
+	@Override
+	public void onFocusChange(View v, boolean hasFocus) {
+		// TODO Auto-generated method stub
+		Log.d("PannelItemLayout", "我获得焦点了");
 	}
 }
